@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/manifest.xsd" type="manifest" expires="2018-03-07T23:59:59Z">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-0" component_manager_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68027" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="sr1632"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="nxsvks"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="pg6499"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="ss997901"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="pjw7904"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="ssk8164"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26562" username="efgics"/>
+      <emulab:console server="vhost2.shared-nodes.emulab-ops.instageni.rnoc.gatech.edu"/>
+    </services>
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68034" mac_address="02a37eab2e43">
+      <ip address="10.10.1.2" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68036" mac_address="02da33ce9eaa">
+      <ip address="10.10.2.1" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-8" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68045" mac_address="02fb129aef18">
+      <ip address="10.10.5.1" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm2-10" hardware_type="pcvm"/>
+    <host name="node-0.OVS-RSTP.ch-geni-net.instageni.rnoc.gatech.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-1" component_manager_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68028" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="sr1632"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="nxsvks"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="pg6499"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="ss997901"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="pjw7904"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="ssk8164"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26563" username="efgics"/>
+      <emulab:console server="vhost2.shared-nodes.emulab-ops.instageni.rnoc.gatech.edu"/>
+    </services>
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68033" mac_address="020aafe2366c">
+      <ip address="10.10.1.1" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-4" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68039" mac_address="0215b3b1b4ea">
+      <ip address="10.10.3.1" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm2-11" hardware_type="pcvm"/>
+    <host name="node-1.OVS-RSTP.ch-geni-net.instageni.rnoc.gatech.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-2" component_manager_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68029" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="sr1632"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="nxsvks"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="pg6499"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="ss997901"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="pjw7904"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="ssk8164"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26564" username="efgics"/>
+      <emulab:console server="vhost2.shared-nodes.emulab-ops.instageni.rnoc.gatech.edu"/>
+    </services>
+    <interface client_id="interface-3" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68037" mac_address="028552162f8d">
+      <ip address="10.10.2.2" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-6" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68042" mac_address="0222384aec49">
+      <ip address="10.10.4.1" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm2-12" hardware_type="pcvm"/>
+    <host name="node-2.OVS-RSTP.ch-geni-net.instageni.rnoc.gatech.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-3" component_manager_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+node+pc2" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68030" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="sr1632"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="nxsvks"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="pg6499"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="ss997901"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="pjw7904"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="ssk8164"/>
+      <login authentication="ssh-keys" hostname="pc2.instageni.rnoc.gatech.edu" port="26565" username="efgics"/>
+      <emulab:console server="vhost2.shared-nodes.emulab-ops.instageni.rnoc.gatech.edu"/>
+    </services>
+    <interface client_id="interface-5" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68040" mac_address="02bfb592f59c">
+      <ip address="10.10.3.2" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-7" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68043" mac_address="02ec80d56d4f">
+      <ip address="10.10.4.2" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-9" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68046" mac_address="0241485ba051">
+      <ip address="10.10.5.2" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm2-13" hardware_type="pcvm"/>
+    <host name="node-3.OVS-RSTP.ch-geni-net.instageni.rnoc.gatech.edu"/>
+  </node>
+  <link client_id="link-0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68032">
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68033"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68034"/>
+    <component_manager name="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm"/>
+  </link>
+  <link client_id="link-1" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68035">
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68036"/>
+    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68037"/>
+    <component_manager name="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm"/>
+  </link>
+  <link client_id="link-2" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68038">
+    <interface_ref client_id="interface-4" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68039"/>
+    <interface_ref client_id="interface-5" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68040"/>
+    <component_manager name="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm"/>
+  </link>
+  <link client_id="link-3" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68041">
+    <interface_ref client_id="interface-6" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68042"/>
+    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68043"/>
+    <component_manager name="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm"/>
+  </link>
+  <link client_id="link-4" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68044">
+    <interface_ref client_id="interface-8" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68045"/>
+    <interface_ref client_id="interface-9" component_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+interface+pc2:lo0" sliver_id="urn:publicid:IDN+instageni.rnoc.gatech.edu+sliver+68046"/>
+    <component_manager name="urn:publicid:IDN+instageni.rnoc.gatech.edu+authority+cm"/>
+  </link>
+  <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
+    <rs:location country="US" latitude="33.77846" longitude="-84.39888"/>
+  </rs:site_info>
+</rspec>
